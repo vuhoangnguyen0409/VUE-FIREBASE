@@ -3,13 +3,18 @@ const app = Vue.createApp({
         return {
             title: 'The title from vue',
             author: ' Nguyen Vu',
-            age: 34
+            age: 34,
+            showBooks: true
         }
     },
     methods: {
         changeTitle() {
             console.log('you clicked me')
             this.title = "update new title"
+        },
+
+        toggleShowbooks() {
+            this.showBooks = !this.showBooks
         }
     }
 })
