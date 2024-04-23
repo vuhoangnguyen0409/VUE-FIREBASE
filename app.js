@@ -1,6 +1,11 @@
 const app = Vue.createApp({
-    // data, functions
-    template: '<h2>I am template from vue</h2>'
+    data() {
+        return {
+            title: 'The title from vue',
+            author: ' Nguyen Vu',
+            age: 34
+        }
+    }
 })
 
 app.mount('#app')
